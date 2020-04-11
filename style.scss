@@ -1,0 +1,58 @@
+$honolulu-blue: #0162af;
+$vivid-cerulean: #00adef;
+$usc-gold: #ffcb05;
+$princeton-orange: #f6821f;
+
+body{
+    background: white;
+}
+
+.box{
+    position: relative;
+    display: block;
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    margin-top: 10%;
+    border: 5px solid greenyellow;
+}
+
+.top-triangle-left{
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    left: 30%;
+    top: 5%;
+    background: $honolulu-blue;
+    clip-path: polygon(50% 0%, 0 70%, 50% 100%);
+}
+
+.top-triangle-right{
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    right: 30%;
+    top: 5%;
+    background: $vivid-cerulean;
+    clip-path: polygon(50% 0%, 100% 70%, 50% 100%);
+}
+
+.bottom-triangle-left{
+    position: absolute;
+    width: 40%;
+    height: 30%;
+    top: 50%;
+    left: 5%;
+    background: $usc-gold;
+    clip-path: polygon(50% 0%, 100% 50%, 0 100%);
+}
+
+.bottom-triangle-right{
+    position: absolute;
+    width: 40%;
+    height: 30%;
+    top: 50%;
+    right: 5%;
+    background: $princeton-orange;
+    clip-path: polygon(50% 0%, 0 50%, 100% 100%);
+}
